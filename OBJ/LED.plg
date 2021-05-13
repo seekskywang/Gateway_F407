@@ -1,0 +1,22 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Ping\Desktop\STM32F407VET6资料\2，标准例程-库函数版本\实验1 跑马灯实验\USER\LED.uvproj
+Project File Date:  08/30/2015
+
+<h2>Output:</h2>
+Build target 'LED'
+compiling main.c...
+..\USER\stm32f4xx.h(89): warning:  #47-D: incompatible redefinition of macro "STM32F40_41xxx"
+compiling led.c...
+..\USER\stm32f4xx.h(89): warning:  #47-D: incompatible redefinition of macro "STM32F40_41xxx"
+linking...
+Program Size: Code=5236 RO-data=424 RW-data=48 ZI-data=1832  
+FromELF: creating hex file...
+"..\OBJ\LED.axf" - 0 Errors, 2 Warning(s).
+Load "..\\OBJ\\LED.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
