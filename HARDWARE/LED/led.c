@@ -24,7 +24,17 @@ void LED_Init(void)
 
 }
 
-
+void LedToggle(u8 bit)
+{
+	if(bit == 1)
+	{
+		GPIO_ResetBits(GPIOD,GPIO_Pin_0);  //LED0对应引脚GPIOA.6拉低，亮  等同LED0=0;
+		GPIO_SetBits(GPIOD,GPIO_Pin_1);   //LED1对应引脚GPIOA.7拉高，灭 等同LED1=1;
+	}else if(bit == 2){
+		GPIO_SetBits(GPIOD,GPIO_Pin_0);	   //LED0对应引脚GPIOA.6拉高，灭  等同LED0=1;
+		GPIO_ResetBits(GPIOD,GPIO_Pin_1); //LED1对应引脚GPIOA.7拉低，亮 等同LED1=0;
+	}
+}
 
 
 
